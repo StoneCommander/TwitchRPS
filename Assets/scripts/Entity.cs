@@ -54,13 +54,13 @@ public class Entity : MonoBehaviour
         // check if enitty type is on the attack types list
         if (attackTypes.Contains(entityScript.type))
         {
-          // print(entity.transform);
+          print(entity.transform);
           attackTargets.Add(entity.transform.position);
         }
         // check if enitty type is on the run away types list
         else if (runAwayTypes.Contains(entityScript.type))
         {
-          // print(entity.transform);
+          print(entity.transform);
           runTargets.Add(entity.transform.position);
         }
       }

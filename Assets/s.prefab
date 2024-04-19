@@ -108,7 +108,7 @@ MonoBehaviour:
   speed: 0.05
   obstacles:
     serializedVersion: 2
-    m_Bits: 2147483647
+    m_Bits: 64
   searchShortcut: 1
   snapToGrid: 0
   drawDebugLines: 1

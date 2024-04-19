@@ -6,6 +6,7 @@ public class GameControlller : MonoBehaviour
 {
     // list of entity prefabs
     public List<GameObject> entityPrefabs;
+    public Vector2 spawnRange = new Vector2(5, 5);
 
     public int numEntities = 20;
 
@@ -18,7 +19,7 @@ public class GameControlller : MonoBehaviour
         {
             for (int i = 0; i < numEntities; i++)
             {
-                Instantiate(entityPrefab, new Vector3(Random.Range(-5, 5), Random.Range(-5, 5), 0), Quaternion.identity);
+                Instantiate(entityPrefab, new Vector3(Random.Range(-spawnRange.x, spawnRange.x), Random.Range(-spawnRange.y, spawnRange.y), 0), Quaternion.identity);
             }
         }
     }
